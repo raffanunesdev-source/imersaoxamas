@@ -1,0 +1,571 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>XAMAS - Acaba em Mim | 19/12 em Brasília</title>
+<meta name="description" content="Para filhos e filhas que não tiveram um pai. Um dia seguro, 19/12 em Brasília, para a falta do pai parar de mandar na sua vida. Tem que acabar em você.">
+<!-- RASCUNHO: remover a linha abaixo quando a página for publicada -->
+<meta name="robots" content="noindex, nofollow">
+<script>document.documentElement.className+=' js';</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --creme:#F7F1E8; --carvao:#1F1A17; --chama:#E8590C; --brasa:#C2410C; --areia:#E9DFCF; --pedra:#6B625B; --branco:#FFFFFF;
+  --linha:rgba(31,26,23,.16); --linha-dk:rgba(247,241,232,.18);
+  --serif:'Playfair Display',Georgia,serif;
+  --sans:'Hanken Grotesk',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:var(--sans);font-weight:400;color:var(--carvao);background:var(--creme);line-height:1.65;font-size:17px;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;display:block;height:auto}
+a{color:inherit}
+ul,ol{list-style:none}
+.wrap{max-width:1160px;margin:0 auto;padding:0 24px}
+section{position:relative}
+.sec{padding:96px 0}
+@media(min-width:900px){.sec{padding:140px 0}}
+.bg-areia{background:var(--areia)}
+.bg-dark{background:var(--carvao);color:var(--creme)}
+
+/* tipografia */
+.eyebrow{font-size:11px;letter-spacing:.3em;text-transform:uppercase;font-weight:600;color:var(--brasa);display:flex;gap:14px;align-items:center;margin-bottom:26px}
+.eyebrow b{font-family:var(--serif);font-weight:500;font-size:15px;letter-spacing:.05em;color:var(--chama)}
+.bg-dark .eyebrow{color:var(--creme)}
+h1,h2,h3{font-family:var(--serif);font-weight:500;line-height:1.12;letter-spacing:-.01em}
+h2{font-size:clamp(32px,5vw,58px);max-width:16em;text-wrap:balance}
+h2 em,h1 em{font-style:italic;color:var(--brasa)}
+.bg-dark h2 em,.bg-dark h1 em{color:var(--chama)}
+.lede{font-size:clamp(17px,1.6vw,20px);color:var(--pedra);max-width:36em;margin-top:26px}
+.bg-dark .lede{color:#d9cfc2}
+.center{text-align:center}
+.center h2,.center .lede{margin-left:auto;margin-right:auto}
+.fonte{font-size:13px;color:var(--pedra)}
+
+/* botão */
+.btn{display:flex;align-items:center;justify-content:center;gap:12px;background:var(--brasa);color:#fff;text-decoration:none;font-size:13px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;line-height:1.35;text-align:center;padding:20px 26px;border:1px solid var(--brasa);transition:.35s;cursor:pointer;font-family:var(--sans);width:100%;margin-top:auto}
+.btn:hover{background:var(--carvao);border-color:var(--carvao)}
+.bg-dark .btn:hover{background:var(--creme);color:var(--carvao);border-color:var(--creme)}
+.btn:focus-visible,summary:focus-visible{outline:3px solid var(--chama);outline-offset:3px}
+
+/* marcadores de rascunho */
+.pend{background:#FFF1B8;color:#5a4300;border:1px dashed #b88a00;padding:0 5px;font-weight:600;font-size:.9em}
+.conf{display:none;background:#FFE3D1;color:var(--brasa);font-size:10px;font-weight:700;padding:1px 6px;margin-left:8px;vertical-align:middle;text-transform:uppercase;letter-spacing:.08em}
+body.revisao .conf{display:inline-block}
+
+/* topo */
+header{position:fixed;inset:0 0 auto 0;z-index:50;transition:.4s;padding:14px 0}
+header.solid{background:rgba(247,241,232,.92);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);box-shadow:0 1px 0 var(--linha)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px}
+header img{height:42px;width:auto}
+header .quando{font-size:11px;letter-spacing:.22em;text-transform:uppercase;font-weight:600;white-space:nowrap}
+@media(max-width:560px){header img{height:34px}header .quando{font-size:10px;letter-spacing:.14em}}
+
+/* hero */
+.hero{min-height:100svh;display:grid;align-items:end;padding:120px 0 64px;background:linear-gradient(180deg,var(--creme) 0%,var(--areia) 100%);overflow:hidden}
+.hero .grid{display:grid;gap:44px;align-items:end}
+@media(min-width:900px){.hero .grid{grid-template-columns:1fr 400px}}
+.hero h1{font-size:clamp(36px,6.4vw,66px);font-weight:700}
+.hero h1 span{display:block}
+.hero .sub{font-size:clamp(17px,1.5vw,21px);max-width:34em;margin-top:28px;color:#4a423c}
+.hero .sub strong{display:block;font-family:var(--serif);font-size:1.4em;font-weight:500;margin-top:18px;line-height:1.25;color:var(--carvao)}
+.hero .wrap{position:relative;z-index:1}
+.hero .mono{position:absolute;right:-8%;top:2%;width:min(70vw,640px);opacity:.12;pointer-events:none;z-index:0}
+.panel{position:relative;aspect-ratio:4/5;background:var(--carvao);color:var(--creme);display:flex;flex-direction:column;justify-content:space-between;padding:34px 30px;justify-self:end;width:100%;max-width:420px}
+@media(max-width:899px){.panel{aspect-ratio:auto;min-height:260px;justify-self:stretch;max-width:none}}
+.panel::before{content:"";position:absolute;inset:-18px -18px 18px 18px;border:1px solid var(--chama);z-index:-1}
+.panel small{font-size:11px;letter-spacing:.3em;text-transform:uppercase;font-weight:600;color:var(--creme)}
+.panel .acaba{font-family:var(--serif);font-weight:900;font-style:italic;font-size:clamp(40px,5vw,56px);line-height:1;color:var(--chama)}
+.panel .acaba span{display:block;color:var(--creme);font-style:normal;font-size:.42em;letter-spacing:.14em;text-transform:uppercase;font-weight:500;font-family:var(--sans);margin-top:14px}
+.proof{display:flex;flex-wrap:wrap;gap:12px 34px;margin-top:44px;padding-top:26px;border-top:1px solid var(--linha);font-size:12px;letter-spacing:.2em;text-transform:uppercase;font-weight:600}
+.proof span::before{content:"";display:inline-block;width:6px;height:6px;background:var(--chama);margin-right:12px;vertical-align:middle}
+
+/* destaque grande */
+.destaque{background:var(--carvao);padding:clamp(64px,10vw,120px) 0;text-align:center;overflow:hidden;position:relative;border-top:6px solid var(--chama);border-bottom:6px solid var(--chama)}
+.destaque .tq{display:block;font-family:var(--serif);font-weight:900;text-transform:uppercase;line-height:.95;letter-spacing:-.015em;font-size:clamp(2.5rem,11vw,8rem);color:var(--creme)}
+.destaque .tq b{display:block;color:var(--chama);font-weight:900}
+.destaque .tq .peq{display:block;font-size:.46em;letter-spacing:.04em;margin-bottom:.12em}
+.destaque .fecho{margin-top:clamp(28px,4vw,48px);color:var(--creme);font-size:clamp(18px,2.2vw,26px);font-family:var(--serif);font-style:italic}
+.destaque .fecho strong{font-weight:500;font-style:normal;display:block}
+
+/* split */
+.split{display:grid;gap:56px;align-items:start}
+@media(min-width:900px){.split{grid-template-columns:1fr 1fr;gap:96px}}
+.numero{font-family:var(--serif);font-weight:900;font-size:clamp(72px,14vw,170px);line-height:.95;color:var(--chama);letter-spacing:-.03em}
+
+/* lista numerada */
+.list{margin-top:64px;border-top:1px solid var(--linha);counter-reset:l}
+.list li{counter-increment:l;display:grid;grid-template-columns:56px 1fr;gap:12px;padding:26px 0;border-bottom:1px solid var(--linha);font-family:var(--serif);font-size:clamp(20px,2.3vw,29px);line-height:1.3}
+.list li::before{content:counter(l,decimal-leading-zero);font-size:14px;color:var(--brasa);letter-spacing:.1em;padding-top:.8em;font-family:var(--sans);font-weight:600}
+@media(min-width:900px){.list{display:grid;grid-template-columns:1fr 1fr;column-gap:64px}}
+.close-note{margin-top:56px;padding-left:24px;border-left:3px solid var(--chama);font-size:clamp(19px,2vw,26px);max-width:34em;font-family:var(--serif);font-style:italic}
+.close-note strong{font-weight:500;font-style:normal}
+
+/* cards em grade com linha de 1px */
+.cards{display:grid;gap:1px;background:var(--linha);margin-top:56px;border:1px solid var(--linha)}
+@media(min-width:720px){.cards.c2{grid-template-columns:1fr 1fr}.cards.c3{grid-template-columns:repeat(3,1fr)}}
+.card{background:var(--creme);padding:38px 34px;transition:background .5s}
+.bg-areia .card{background:var(--areia)}
+.card:hover{background:var(--branco)}
+.card .n{font-family:var(--serif);color:var(--chama);font-size:16px;margin-bottom:16px;display:block;font-weight:700}
+.card h3{font-size:clamp(22px,2.2vw,28px);margin-bottom:12px}
+.card p{color:var(--pedra);font-size:16px}
+
+/* virada */
+.virada h2{font-size:clamp(34px,6vw,72px);max-width:14em}
+.virada .linha{margin-top:36px;max-width:34em;font-size:clamp(18px,1.9vw,23px)}
+.virada .linha+.linha{margin-top:20px}
+
+/* etapas */
+.steps{margin-top:64px;display:grid;gap:1px;background:var(--linha);border:1px solid var(--linha)}
+@media(min-width:620px){.steps{grid-template-columns:1fr 1fr}}
+@media(min-width:1000px){.steps{grid-template-columns:repeat(4,1fr)}}
+.step{background:var(--areia);padding:30px 26px;transition:.5s}
+@media(min-width:620px){.step{min-height:240px;padding:34px 26px}}
+.step:hover{background:var(--creme)}
+.step .rn{font-family:var(--serif);font-size:46px;color:var(--chama);line-height:1;margin-bottom:30px;display:block;font-weight:700}
+.step h3{font-size:22px;margin-bottom:10px}
+.step p{font-size:15px;color:#4a423c;line-height:1.55}
+.step.fim{background:var(--carvao);color:var(--creme);display:flex;flex-direction:column;justify-content:flex-end}
+.step.fim .rn{color:var(--chama);font-style:italic;font-size:30px;line-height:1.1}
+.step.fim p{color:#d9cfc2}
+.step.fim:hover{background:var(--carvao)}
+
+/* ticks */
+.ticks li{padding:20px 0;border-top:1px solid var(--linha);display:flex;gap:18px;align-items:baseline;font-size:18px}
+.ticks li:last-child{border-bottom:1px solid var(--linha)}
+.ticks li::before{content:"";flex:none;width:8px;height:8px;background:var(--chama);transform:translateY(-1px)}
+.aviso{margin-top:48px;padding-left:24px;border-left:3px solid var(--brasa);max-width:40em}
+.aviso strong{display:block;font-family:var(--serif);font-size:22px;font-weight:500;margin-bottom:6px}
+
+/* preço */
+.precos{display:grid;gap:1px;background:var(--linha);margin-top:56px;border:1px solid var(--linha)}
+@media(min-width:820px){.precos{grid-template-columns:1fr 1fr}}
+.preco{background:var(--creme);padding:44px 38px;display:flex;flex-direction:column;position:relative}
+.preco.dest{border-top:5px solid var(--chama)}
+.preco .tag{font-size:10px;letter-spacing:.26em;text-transform:uppercase;font-weight:700;color:var(--brasa);margin-bottom:10px}
+.preco h3{font-size:clamp(26px,3vw,34px);margin-bottom:6px}
+.valor{font-family:var(--serif);font-weight:900;font-size:clamp(54px,7vw,84px);line-height:1;margin:.15em 0 .05em}
+.valor small{font-size:.32em;font-weight:500;margin-right:6px;font-family:var(--sans);letter-spacing:.05em}
+.cada{color:var(--pedra);font-size:15px;margin-bottom:26px}
+.regras{margin-top:28px;font-size:14px;color:var(--pedra);max-width:46em}
+.regras p+p{margin-top:6px}
+.dados{display:flex;flex-wrap:wrap;gap:8px 28px;margin-top:26px;font-size:12px;letter-spacing:.2em;text-transform:uppercase;font-weight:600}
+.bg-dark .precos{background:var(--linha-dk);border-color:var(--linha-dk)}
+.bg-dark .preco{background:var(--carvao)}
+.bg-dark .preco .tag{color:var(--chama)}
+.bg-dark .cada,.bg-dark .regras{color:#d9cfc2}
+
+/* conversa sincera */
+.vs{display:grid;gap:1px;margin-top:56px;background:var(--linha-dk)}
+@media(min-width:820px){.vs{grid-template-columns:1fr 1fr}}
+.vs>div{background:var(--carvao);padding:40px 36px}
+.vs h3{font-size:12px;letter-spacing:.3em;text-transform:uppercase;font-family:var(--sans);font-weight:700;color:var(--chama);margin-bottom:6px}
+.vs .t{font-family:var(--serif);font-size:clamp(30px,3.6vw,44px);margin-bottom:24px;font-weight:500}
+.vs li{padding:14px 0;border-top:1px solid var(--linha-dk);font-size:17px;color:var(--creme)}
+.vs .r li::before{content:"+";color:var(--chama);margin-right:14px;font-weight:700}
+.vs .l li::before{content:"×";color:var(--chama);margin-right:14px;font-weight:700}
+.sincero .nota{margin-top:48px;font-family:var(--serif);font-size:clamp(20px,2.3vw,28px);max-width:30em;font-style:italic;color:var(--creme)}
+.sincero .grande{font-family:var(--serif);font-weight:900;text-transform:uppercase;color:var(--chama);font-size:clamp(2.2rem,8vw,5.2rem);line-height:1;margin-top:.5em}
+
+/* quem */
+.who{display:grid;gap:56px;align-items:center}
+@media(min-width:900px){.who{grid-template-columns:.9fr 1.1fr;gap:96px}}
+.who .ph{position:relative}
+.who .ph .foto{aspect-ratio:4/5;background:var(--areia);border:1px dashed var(--pedra);display:flex;align-items:center;justify-content:center;text-align:center;padding:24px;color:var(--pedra);font-weight:600;font-size:15px}
+@media(min-width:900px){.who .ph{max-width:460px}}
+.who .ph::after{content:"";position:absolute;inset:18px -18px -18px 18px;border:1px solid var(--chama);z-index:-1}
+.who p{margin-top:20px;font-size:18px}
+.who .sig{font-family:var(--serif);font-style:italic;font-size:clamp(24px,2.6vw,34px);margin-top:0;line-height:1.25;font-weight:500}
+.who .ultima{font-family:var(--serif);font-size:clamp(20px,2vw,26px);line-height:1.3;margin-top:30px}
+.who .ultima em{color:var(--brasa)}
+
+/* faq */
+.faq{margin-top:56px;border-top:1px solid var(--linha);max-width:860px}
+.faq details{border-bottom:1px solid var(--linha)}
+.faq summary{list-style:none;cursor:pointer;padding:26px 44px 26px 0;font-family:var(--serif);font-size:clamp(19px,2vw,24px);position:relative;line-height:1.3;font-weight:500}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";position:absolute;right:4px;top:22px;font-family:var(--sans);font-weight:300;font-size:30px;color:var(--chama);transition:.3s}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq details p{padding:0 44px 28px 0;color:#4a423c;font-size:17px}
+
+/* final */
+.final{overflow:hidden}
+.final .mono{position:absolute;left:-8%;bottom:-16%;width:min(80vw,700px);opacity:.07;pointer-events:none}
+.final .wrap{position:relative}
+.final .grande{font-family:var(--serif);font-style:italic;font-weight:900;font-size:clamp(3rem,12vw,8rem);line-height:.95;color:var(--chama);margin-bottom:.18em}
+
+/* rodapé */
+footer{background:#14100e;color:#b9ada3;padding:56px 0;font-size:13px;line-height:1.7}
+footer .wrap{display:grid;gap:28px;max-width:760px}
+footer img{height:44px;width:auto}
+footer .email{color:var(--creme);font-weight:600}
+
+/* entrada suave */
+.js [data-r]{opacity:0;transform:translateY(28px);transition:opacity .9s cubic-bezier(.2,.7,.2,1),transform .9s cubic-bezier(.2,.7,.2,1);transition-delay:var(--d,0s)}
+.js [data-r].in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.js [data-r]{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<header id="top">
+  <div class="wrap">
+    <img src="assets/logo-xamas.png" alt="Imersão XAMAS" width="162" height="42">
+    <span class="quando">19/12 · Brasília</span>
+  </div>
+</header>
+
+<main>
+<!-- BLOCO 1: promessa -->
+<section class="hero">
+  <img class="mono" src="assets/chama-xamas.png" alt="" aria-hidden="true">
+  <div class="wrap">
+    <div class="grid">
+      <div>
+        <p class="eyebrow" data-r><b>XAMAS</b> Para filhos e filhas que não tiveram um pai</p>
+        <h1 data-r style="--d:.08s"><span>Seu pai foi embora.</span><span>Ou ficou, mas <em>nunca esteve.</em></span></h1>
+        <p class="sub" data-r style="--d:.16s">Está na hora de essa falta parar de mandar na sua vida: no dinheiro, no amor e na família.
+          <strong>A culpa não foi sua. Mas parar é decisão sua.</strong></p>
+      </div>
+      <div class="panel" data-r style="--d:.24s">
+        <small>XAMAS · Imersão</small>
+        <div class="acaba">Acaba em mim.<span>19/12 · Brasília · 09h às 20h</span></div>
+      </div>
+    </div>
+    <div class="proof" data-r style="--d:.3s"><span>Um dia seguro</span><span>Ninguém é obrigado a falar</span><span>Equipe de cuidado o dia todo</span></div>
+  </div>
+</section>
+
+<!-- DESTAQUE GRANDE -->
+<section class="destaque" aria-label="Tem que acabar em você">
+  <div class="wrap">
+    <span class="tq" data-r><span class="peq">Tem que</span><b>acabar em você.</b></span>
+    <p class="fecho" data-r style="--d:.12s"><strong>Chega dessa falta roubar a sua vida.</strong>E você não vai fazer isso sozinho(a).</p>
+  </div>
+</section>
+
+<!-- BLOCO 2: dado -->
+<section class="sec">
+  <div class="wrap">
+    <div class="split">
+      <div data-r>
+        <p class="eyebrow"><b>01</b> Você não está sozinho(a)</p>
+        <h2>Essa falta é de <em>muita gente.</em></h2>
+        <p class="lede">E você não precisa carregá-la sozinho(a).</p>
+      </div>
+      <div data-r style="--d:.1s">
+        <p class="numero">+160 mil</p>
+        <p style="font-family:var(--serif);font-size:clamp(22px,2.4vw,30px);line-height:1.25;margin-top:10px">bebês brasileiros nascem todo ano sem o nome do pai na certidão.</p>
+        <p style="margin-top:20px;color:var(--pedra)">E esse número só conta o abandono no papel. O pai que morava na mesma casa e nunca esteve de verdade não aparece em estatística nenhuma.</p>
+        <p class="fonte" style="margin-top:14px">Fonte: Arpen-SP, com dados dos cartórios (2016 a 2024). <span class="pend">conferir faixa de números antes de publicar</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BLOCO 3: dor -->
+<section class="sec bg-areia">
+  <div class="wrap">
+    <div data-r>
+      <p class="eyebrow"><b>02</b> A falta, nomeada</p>
+      <h2>Você carrega a falta do seu pai e <em>quase ninguém percebe.</em></h2>
+      <p class="lede">Talvez você viva pensando assim:</p>
+    </div>
+    <ol class="list" data-r style="--d:.08s">
+      <li>Ele estava em casa, mas nunca estava comigo.</li>
+      <li>Nunca ouvi um "eu te amo" dele.</li>
+      <li>Ele pagava tudo, mas nunca conversou comigo de verdade.</li>
+      <li>Eu ficava imaginando como ele era.</li>
+      <li>Dia dos Pais é o dia que eu mais evito.</li>
+      <li>Eu queria ele aqui, com todos os defeitos. Não deu tempo de dizer o que eu precisava.</li>
+      <li>Eu nunca sou suficiente. Faço, entrego, e ainda acho que falta.</li>
+      <li>Tenho medo de ser deixado(a). Ou eu grudo, ou eu saio antes.</li>
+      <li>Jurei que nunca ia ser como ele. E às vezes me pego sendo.</li>
+    </ol>
+    <p class="close-note" data-r><strong>E a falta aparece onde dói mais.</strong></p>
+    <div class="cards c3" data-r>
+      <div class="card"><span class="n">No dinheiro</span><p>Quando você precisa provar que vale.</p></div>
+      <div class="card"><span class="n">No amor</span><p>Quando você tem medo de ser deixado(a).</p></div>
+      <div class="card"><span class="n">Na família</span><p>Quando você repete o que jurou nunca repetir.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- BLOCO 4: virada -->
+<section class="sec virada">
+  <div class="wrap">
+    <p class="eyebrow" data-r><b>03</b> A virada</p>
+    <h2 data-r>É pesado, né? <em>A culpa não foi sua.</em></h2>
+    <p class="linha" data-r>Talvez você já tenha tentado ignorar. Provar que não liga. Trabalhar mais. Amar mais. Ser o melhor pai ou a melhor mãe que você consegue. Mas a falta continua.</p>
+    <p class="linha" data-r>Você era criança. Você não escolheu essa falta. Mas as consequências ficaram com você. E por isso <strong>só você pode decidir parar.</strong></p>
+    <p class="close-note" data-r>Tem que acabar em você. E o primeiro passo não precisa ser dado sozinho(a). <strong>E se esse fosse o dia do seu primeiro passo?</strong></p>
+  </div>
+</section>
+
+<!-- BLOCO 5: passo a passo -->
+<section class="sec bg-areia">
+  <div class="wrap">
+    <div data-r>
+      <p class="eyebrow"><b>04</b> O dia</p>
+      <h2>7 passos, do silêncio até o <em>primeiro passo novo.</em></h2>
+    </div>
+    <div class="steps" data-r style="--d:.08s">
+      <div class="step"><span class="rn">1</span><h3>Nomear</h3><p>Dar nome ao que você sente e ao tipo de falta que foi a sua: pai que foi embora, pai que ficou sem estar, pai que morreu.</p></div>
+      <div class="step"><span class="rn">2</span><h3>Entender</h3><p>Ver por que ainda dói, mesmo depois de tantos anos, sem culpa.</p></div>
+      <div class="step"><span class="rn">3</span><h3>Mapear</h3><p>Descobrir onde a falta aparece hoje: dinheiro, amor, família, trabalho, fé.</p></div>
+      <div class="step"><span class="rn">4</span><h3>Sentir</h3><p>Chorar o pai que você não teve do jeito que precisou.<span class="conf">confirmar programa: carta ao pai</span></p></div>
+      <div class="step"><span class="rn">5</span><h3>Perdoar</h3><p>Perdão com método, no seu tempo. Perdoar não é voltar a conviver, nem dizer que doeu pouco.</p></div>
+      <div class="step"><span class="rn">6</span><h3>Receber o Pai</h3><p>Ouvir o que a Palavra de Deus diz sobre o Pai que não falha, a partir de Lucas 15.<span class="conf">confirmar programa</span></p></div>
+      <div class="step"><span class="rn">7</span><h3>Acabar em você</h3><p>Sair com um compromisso concreto para os próximos 30 dias e uma palavra para os seus filhos (ou para a criança que você foi).</p></div>
+      <div class="step fim"><span class="rn">Acaba em mim.</span><p>Cada passo tem música, tempo e gente cuidando de você. Ninguém é obrigado a falar em público. Um dia não faz tudo, mas o primeiro passo cabe em um dia.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- BLOCO 6: o que você vai viver e receber -->
+<section class="sec">
+  <div class="wrap">
+    <div class="split">
+      <div data-r>
+        <p class="eyebrow"><b>05</b> O que está incluído</p>
+        <h2>Tudo o que você vai viver e receber no XAMAS: <em>Acaba em Mim</em></h2>
+        <p class="lede">Para a falta parar de mandar em você.</p>
+      </div>
+      <ul class="ticks" data-r style="--d:.08s">
+        <li><span>Um dia inteiro, das 09h às 20h, em Brasília <span class="pend">local a definir</span></span></li>
+        <li><span>O testemunho do Raffa: a história dele com o pai que foi embora</span></li>
+        <li><span>O mapa da falta: um exercício escrito, só seu, para ver onde ela aparece na sua vida</span></li>
+        <li><span>A carta ao seu pai, que não será enviada<span class="conf">confirmar programa</span></span></li>
+        <li><span>Perdão com método, passo a passo, sem pressa e sem obrigação</span></li>
+        <li><span>Um momento de bênção: ouvir o que você precisou ouvir<span class="conf">confirmar programa</span></span></li>
+        <li><span>O compromisso de 30 dias e a palavra para os seus filhos (ou para a criança que você foi)</span></li>
+        <li><span>Equipe de cuidado e sala de acolhimento abertas o dia todo</span></li>
+        <li><span>Kit do evento: caderno, caneta e cartões<span class="conf">confirmar programa</span></span></li>
+        <li><span>Grupo de continuidade por 30 dias e lista de profissionais de saúde mental<span class="conf">confirmar programa</span></span></li>
+        <li><span>Alimentação: <span class="pend">definir se almoço e lanche estão incluídos</span></span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- BLOCO 7: para quem é -->
+<section class="sec bg-areia">
+  <div class="wrap">
+    <div class="split">
+      <div data-r>
+        <p class="eyebrow"><b>06</b> Para quem é</p>
+        <h2>O XAMAS: Acaba em Mim é para <em>você que:</em></h2>
+        <p class="lede"><strong>Se você se reconheceu em pelo menos 2 itens, esse dia é para você.</strong></p>
+        <div class="aviso">
+          <strong>Um aviso, pelo seu cuidado</strong>
+          <p>Se você está em crise emocional agora, em tratamento psiquiátrico, ou sofreu violência ou abuso do seu pai, a sua inscrição passa antes por uma conversa com a nossa equipe. Isso é para proteger você.</p>
+        </div>
+      </div>
+      <ul class="ticks" data-r style="--d:.08s">
+        <li><span>Teve um pai que foi embora, ou que nunca conheceu</span></li>
+        <li><span>Teve um pai que ficou em casa, mas nunca esteve de verdade</span></li>
+        <li><span>Perdeu o pai e ainda carrega o que ficou sem ser dito</span></li>
+        <li><span>Sente que nunca é suficiente, mesmo fazendo tudo certo</span></li>
+        <li><span>Tem medo de ser deixado(a), ou foge antes de ser deixado(a)</span></li>
+        <li><span>Percebe que a falta do pai aparece no dinheiro, no amor ou na família</span></li>
+        <li><span>É pai ou mãe e não quer repetir o que doeu</span></li>
+        <li><span>Está cansado(a) de fingir que não liga</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- BLOCO 8: base do dia -->
+<section class="sec">
+  <div class="wrap">
+    <div data-r>
+      <p class="eyebrow"><b>07</b> A base</p>
+      <h2>Um dia com base: <em>emoção, ciência e Palavra de Deus.</em></h2>
+    </div>
+    <div class="cards c2" data-r style="--d:.08s">
+      <div class="card"><span class="n">Emoção</span><p>Dar nome ao que se sente é o primeiro passo para ter menos medo disso. <span class="pend">verificar fonte</span></p></div>
+      <div class="card"><span class="n">Ciência</span><p>Uma revisão de 47 estudos (McLanahan, Tach e Schneider) mostra que a ausência do pai afeta a saúde mental, e que o efeito pode chegar à vida adulta.</p></div>
+      <div class="card"><span class="n">Perdão</span><p>Pesquisas sobre perdão mostram que ele pode ser trabalhado com método, inclusive em grupo.</p></div>
+      <div class="card"><span class="n">Palavra</span><p>Lucas 15, Romanos 8:15 e Malaquias 4:6 sustentam os passos do dia.</p></div>
+    </div>
+    <p class="fonte" style="margin-top:16px"><span class="pend">citar fontes aqui antes de publicar</span></p>
+  </div>
+</section>
+
+<!-- BLOCO 9: investimento -->
+<section class="sec bg-areia" id="inscricao">
+  <div class="wrap">
+    <div data-r>
+      <p class="eyebrow"><b>08</b> Inscrição</p>
+      <h2>Garanta o seu lugar no XAMAS: <em>Acaba em Mim</em></h2>
+      <div class="dados"><span>19/12</span><span>09h às 20h</span><span>Brasília</span><span class="pend">local a definir</span><span class="pend">vagas: número real</span></div>
+    </div>
+    <div class="precos" data-r style="--d:.08s">
+      <div class="preco">
+        <p class="tag">Para você</p>
+        <h3>1 convite</h3>
+        <p class="valor"><small>R$</small>97</p>
+        <p class="cada"><span class="pend">parcelamento a definir</span> ou à vista no Pix</p>
+        <!-- TROCAR href pelo link do checkout (1 convite, R$ 97) -->
+        <a class="btn" href="#" data-checkout="1-convite">Sim, acaba em mim. Quero a minha vaga</a>
+      </div>
+      <div class="preco dest">
+        <p class="tag">Venha acompanhado(a)</p>
+        <h3>3 convites</h3>
+        <p class="valor"><small>R$</small>197</p>
+        <p class="cada">R$ 65,67 por pessoa. Você economiza R$ 94.</p>
+        <!-- TROCAR href pelo link do checkout (3 convites, R$ 197) -->
+        <a class="btn" href="#" data-checkout="3-convites">Sim, acaba em mim. Quero 3 convites</a>
+      </div>
+    </div>
+    <div class="regras" data-r>
+      <p>Cada pessoa convidada passa por uma triagem rápida e assina o termo de ciência. O evento é espiritual e educativo e não substitui terapia.</p>
+      <p>Pix e cartão de crédito.</p>
+    </div>
+  </div>
+</section>
+
+<!-- BLOCO 10: conversa sincera -->
+<section class="sec bg-dark sincero">
+  <div class="wrap">
+    <div data-r>
+      <p class="eyebrow"><b>09</b> Conversa sincera</p>
+      <h2>Vou ser sincero com você. <em>O XAMAS não cura ninguém em um dia.</em></h2>
+      <p class="lede">Ninguém cura. O caminho continua depois, com o grupo de 30 dias e com ajuda profissional, se for preciso.</p>
+    </div>
+    <div class="vs" data-r style="--d:.08s">
+      <div class="l">
+        <h3>O que o dia não faz</h3>
+        <p class="t">Sem obrigação.</p>
+        <ul>
+          <li>Você não vai ser obrigado(a) a falar em público.</li>
+          <li>Você não vai ser obrigado(a) a chorar.</li>
+          <li>Você não vai ser levado(a) a procurar o seu pai.</li>
+        </ul>
+      </div>
+      <div class="r">
+        <h3>O que um dia faz</h3>
+        <p class="t">O primeiro passo.</p>
+        <ul>
+          <li>Nomear a falta.</li>
+          <li>Entender por que dói.</li>
+          <li>Sentir e perdoar com método.</li>
+          <li>Dar o primeiro passo.</li>
+        </ul>
+      </div>
+    </div>
+    <p class="nota" data-r>Perdoar não é voltar a conviver. Se ele te feriu de verdade, você pode perdoar e manter distância. Mas uma coisa eu sei: a falta do seu pai não vai acabar sozinha. Alguém precisa parar.</p>
+    <p class="grande" data-r>Tem que acabar em você.</p>
+  </div>
+</section>
+
+<!-- BLOCO 11: autoridade -->
+<section class="sec">
+  <div class="wrap">
+    <div class="who">
+      <div class="ph" data-r>
+        <div class="foto"><span>Foto do Raffa em contexto<br>(com as filhas, se ele autorizar, ou no palco)</span></div>
+      </div>
+      <div data-r style="--d:.1s">
+        <p class="eyebrow"><b>10</b> Quem conduz o dia</p>
+        <p class="sig">Eu sou o Raffa Nunes. Eu cresci sem pai.</p>
+        <p>Minha mãe me teve aos 17 anos, e meu pai foi embora. Fui criado com muito amor pela minha avó, pela minha mãe, pela minha tia e pelos meus tios. Mesmo assim, a falta de um pai ficou.</p>
+        <p>Ela me acompanhou por muitos anos: no medo de não ser suficiente, na necessidade de provar o meu valor, nos meus relacionamentos.</p>
+        <p>Fui pastor de jovens e servi 9 anos como pastor e líder numa igreja. Passei por 7 meses de terapia, oração, consagração e jejum para cuidar do meu coração.</p>
+        <p>Hoje sou pai de três filhas. Decidi que o que me faltou não ia faltar para elas.</p>
+        <p>Eu não sou terapeuta. Sou um filho que atravessou isso e que recebeu de Deus o chamado de ajudar outros a atravessar.</p>
+        <p class="ultima">Não vim ensinar ninguém a ser pai. Vim dizer que <em>acaba em mim</em>, e que pode acabar em você.</p>
+        <p class="fonte" style="margin-top:14px"><span class="pend">rascunho: o Raffa revisa cada frase antes de publicar</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BLOCO 12: investimento (2º) -->
+<section class="sec bg-dark final">
+  <img class="mono" src="assets/chama-xamas.png" alt="" aria-hidden="true">
+  <div class="wrap">
+    <div data-r>
+      <p class="grande">Acaba em mim.</p>
+      <h2 style="font-size:clamp(26px,3.6vw,44px)">Garanta o seu lugar no XAMAS: Acaba em Mim</h2>
+      <p class="lede">19/12 · 09h às 20h · Brasília</p>
+    </div>
+    <div class="precos" data-r style="--d:.08s">
+      <div class="preco">
+        <h3>1 convite</h3>
+        <p class="valor"><small>R$</small>97</p>
+        <a class="btn" href="#" data-checkout="1-convite" style="margin-top:22px">Sim, acaba em mim. Quero a minha vaga</a>
+      </div>
+      <div class="preco dest">
+        <p class="tag">Venha acompanhado(a)</p>
+        <h3>3 convites</h3>
+        <p class="valor"><small>R$</small>197</p>
+        <p class="cada" style="margin-bottom:0">R$ 65,67 por pessoa</p>
+        <a class="btn" href="#" data-checkout="3-convites" style="margin-top:22px">Sim, acaba em mim. Quero 3 convites</a>
+      </div>
+    </div>
+    <div class="regras" data-r>
+      <p>A inscrição inclui triagem rápida e termo de ciência. Pix e cartão de crédito.</p>
+    </div>
+  </div>
+</section>
+
+<!-- BLOCO 13: FAQ -->
+<section class="sec">
+  <div class="wrap">
+    <div data-r>
+      <p class="eyebrow"><b>11</b> Antes de se inscrever</p>
+      <h2>Perguntas <em>frequentes.</em></h2>
+    </div>
+    <div class="faq" data-r style="--d:.08s">
+      <details><summary>Funciona para mim, se meu pai ficou em casa?</summary><p>Sim. Muita gente teve um pai presente no endereço e ausente no coração. Essa falta também é falta, e o dia é para você.</p></details>
+      <details><summary>E se meu pai morreu?</summary><p>O dia também é para você. Quem perdeu o pai carrega saudade e coisas que ficaram sem ser ditas, e isso tem lugar aqui.</p></details>
+      <details><summary>É terapia?</summary><p>Não. O evento é espiritual e educativo e não substitui acompanhamento psicológico ou psiquiátrico. Existe equipe de cuidado e uma sala de acolhimento aberta o dia todo. No fim, você recebe uma lista de profissionais.<span class="conf">confirmar programa</span></p></details>
+      <details><summary>Vou ter que falar em público ou contar a minha história?</summary><p>Não. Ninguém é obrigado a falar. Os exercícios escritos são só seus.</p></details>
+      <details><summary>E se eu passar mal ou ficar muito abalado(a)?</summary><p>Você pode sair a qualquer momento e ir para a sala de acolhimento. A equipe de cuidado fica o dia todo, e cuida de você até o fim.</p></details>
+      <details><summary>O meu pai me machucou de verdade. Vão me pedir para perdoar ou procurar ele?</summary><p>Não. Perdoar não é reconciliar, não é confiar de novo e não é voltar a conviver. Ninguém vai te levar a procurar quem te feriu. Na inscrição, você pode contar que sofreu isso, e a equipe conversa com você antes.</p></details>
+      <details><summary>É só para cristãos?</summary><p>O dia é cristão: a Palavra de Deus está em todos os momentos. Quem ainda não crê é recebido com respeito.<span class="conf">confirmar posição do Raffa</span></p></details>
+      <details><summary>Como funcionam os 3 convites?</summary><p>Por R$ 197 você garante 3 lugares, para quem você quiser levar: irmão, irmã, amigo, cônjuge. Cada pessoa faz a sua triagem rápida e assina o seu termo de ciência. <span class="pend">confirmar: convites nominais</span></p></details>
+      <details><summary>Qual a forma de pagamento? É seguro?</summary><p>Pix e cartão de crédito, em plataforma certificada. <span class="pend">definir parcelamento</span></p></details>
+      <details><summary>Tem garantia?</summary><p><span class="pend">definir política de reembolso e prazo</span></p></details>
+      <details><summary>Como recebo as informações do evento?</summary><p>Depois da inscrição e da triagem, você recebe por e-mail <span class="pend">confirmar canais</span> o local, o que levar e os horários.</p></details>
+      <details><summary>E se eu estiver em crise agora?</summary><p>Ligue para o <strong>CVV, 188</strong> (24 horas, gratuito). Em emergência, <strong>SAMU, 192</strong>. Você não precisa esperar o dia 19.</p></details>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- BLOCO 14: rodapé -->
+<footer>
+  <div class="wrap">
+    <img src="assets/logo-xamas-claro.png" alt="Imersão XAMAS" width="162" height="42">
+    <p>XAMAS - ACABA EM MIM<br>Todos os direitos reservados ©</p>
+    <p>Dúvidas: <span class="email pend">e-mail profissional em texto simples, sem link</span><br><span class="pend">Cidade/UF</span> | CNPJ: <span class="pend">a definir</span></p>
+    <p>Este evento é espiritual e educativo e não substitui acompanhamento psicológico ou psiquiátrico. A participação não garante resultado específico: o caminho de cada pessoa é dela e de Deus.</p>
+    <p>Em momento de crise emocional, ligue para o CVV (188) ou para o SAMU (192).</p>
+    <p>Este site não é afiliado ao Facebook ou a qualquer entidade do Facebook. Depois que você sair do Facebook, a responsabilidade não é deles e sim do nosso site.</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  // Modo revisão: abrir a página com ?revisao mostra os avisos "confirmar programa"
+  try{ if(location.search.indexOf('revisao')>-1) document.body.classList.add('revisao'); }catch(e){}
+  // Cabeçalho translúcido ao rolar
+  var h=document.querySelector('header');
+  function onScroll(){ h.classList.toggle('solid', window.scrollY>30); }
+  window.addEventListener('scroll',onScroll,{passive:true}); onScroll();
+  // Entrada suave
+  var els=document.querySelectorAll('[data-r]');
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}})},{threshold:.08,rootMargin:'0px 0px -6% 0px'});
+    els.forEach(function(el){io.observe(el)});
+  } else { els.forEach(function(el){el.classList.add('in')}); }
+})();
+</script>
+</body>
+</html>
