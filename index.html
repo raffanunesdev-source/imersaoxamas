@@ -5,8 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>XAMAS - Acaba em Mim | 19/12 em Brasília</title>
 <meta name="description" content="Para filhos e filhas que não tiveram um pai. Um dia seguro, 19/12 em Brasília, para a falta do pai parar de mandar na sua vida. Tem que acabar em você.">
-<!-- RASCUNHO: remover a linha abaixo quando a página for publicada -->
-<meta name="robots" content="noindex, nofollow">
+<link rel="icon" type="image/png" href="assets/chama-xamas.png">
 <script>document.documentElement.className+=' js';</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -208,6 +207,66 @@ footer .email{color:var(--creme);font-weight:600}
 .js [data-r]{opacity:0;transform:translateY(28px);transition:opacity .9s cubic-bezier(.2,.7,.2,1),transform .9s cubic-bezier(.2,.7,.2,1);transition-delay:var(--d,0s)}
 .js [data-r].in{opacity:1;transform:none}
 @media(prefers-reduced-motion:reduce){.js [data-r]{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+
+/* preço: parcela e à vista em destaque */
+.parcela{font-family:var(--serif);font-weight:700;font-size:1.5rem;line-height:1.1;margin:.3em 0 .1em}
+.parcela b{font-weight:900;font-size:clamp(2.5rem,6.2vw,3.6rem);letter-spacing:-.01em}
+.avista{font-size:1.1rem;margin:.1em 0 .4em}
+.avista b{font-family:var(--serif);font-weight:900;font-size:1.9rem;letter-spacing:-.01em}
+/* quem conduz: painel tipográfico no lugar da foto */
+.autor .foto,.who .ph .foto{background:var(--carvao);color:var(--creme);border:0;display:flex;flex-direction:column;justify-content:space-between;align-items:flex-start;text-align:left;padding:30px 28px;font-weight:400}
+.foto small{font-size:11px;letter-spacing:.3em;text-transform:uppercase;font-weight:600;color:var(--creme)}
+.foto .nm{font-family:var(--serif);font-weight:900;font-size:clamp(34px,5vw,54px);line-height:1;color:var(--creme)}
+.foto .nm span{display:block;font-style:italic;font-weight:700;color:var(--chama);font-size:.6em;margin-top:.45em}
+/* algarismos alinhados e botões do mesmo tamanho */
+.parcela,.avista,.numero,.valor,.preco{font-variant-numeric:lining-nums}
+.preco .btn{min-height:68px}
+
+/* CTAs intercalados que levam ao bloco de preço */
+.cta{margin-top:36px;display:flex;flex-direction:column;align-items:flex-start;gap:10px}
+.cta.c{align-items:center;text-align:center}
+.cta .btn{width:auto;min-width:min(100%,330px);margin-top:0;display:inline-flex}
+.cta small{font-size:13px;color:var(--pedra)}
+.bg-dark .cta small,.dark .cta small{color:#d9cfc2}
+/* foto do Raffa */
+.retrato{width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;display:block}
+.autor .forte{font-family:var(--serif);font-weight:800;font-size:1.25rem;line-height:1.35}
+.autor .forte .accent{color:var(--chama)}
+
+/* seção unificada: o que o XAMAS abre para você */
+:root{--linha:rgba(31,26,23,.16)}
+.pilares{margin-top:56px;border-top:1px solid var(--linha)}
+.pilar{display:grid;gap:18px;padding:34px 0;border-bottom:1px solid var(--linha);text-align:left}
+@media(min-width:900px){.pilar{grid-template-columns:240px 1fr;gap:56px}}
+.pilar h3{font-size:clamp(26px,3vw,36px)}
+.pilar h3 small{display:block;font-family:var(--sans);font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:var(--brasa);font-weight:600;margin-bottom:8px}
+.pilar p{font-size:18px;max-width:46em}
+.pilar p+p,.pilar .stats+p{margin-top:16px}
+.stats{display:grid;gap:1px;background:var(--linha);border:1px solid var(--linha);margin:22px 0 0}
+@media(min-width:760px){.stats{grid-template-columns:repeat(3,1fr)}}
+.stat{background:var(--creme);padding:26px 22px}
+.stat b{display:block;font-family:var(--serif);font-weight:900;font-size:clamp(42px,5vw,62px);line-height:1;color:var(--chama);letter-spacing:-.02em;font-variant-numeric:lining-nums}
+.stat span{display:block;margin-top:12px;font-size:15px;line-height:1.5;color:#3d3631}
+.chamada{margin-top:64px;font-family:var(--serif);font-weight:500;font-size:clamp(22px,2.6vw,32px);line-height:1.25;max-width:26em}
+.res{display:grid;gap:1px;background:var(--linha);border:1px solid var(--linha);margin-top:26px;text-align:left}
+@media(min-width:720px){.res{grid-template-columns:1fr 1fr}}
+@media(min-width:1000px){.res{grid-template-columns:repeat(3,1fr)}}
+.res>div{background:var(--creme);padding:30px 26px}
+.res .n{font-family:var(--serif);color:var(--chama);font-weight:700;font-size:16px;display:block;margin-bottom:10px}
+.res h4{font-family:var(--serif);font-size:clamp(22px,2.2vw,28px);font-weight:700;margin-bottom:8px;line-height:1.15}
+.res p{font-size:16px;color:#4a423c}
+.fecho-dia{margin-top:64px;text-align:center}
+.fecho-dia p{font-family:var(--serif);font-size:clamp(19px,2.2vw,26px);line-height:1.35}
+.fecho-dia .decisao{font-weight:900;text-transform:uppercase;color:var(--brasa);font-size:clamp(1.6rem,4.6vw,3rem);line-height:1.08;margin:.45em auto;max-width:18em}
+.junto{display:flex;flex-wrap:wrap;gap:12px 32px;justify-content:center;margin-top:48px;padding-top:26px;border-top:1px solid var(--linha);font-size:14px;font-weight:600;list-style:none}
+.junto li::before{content:"";display:inline-block;width:6px;height:6px;background:var(--chama);margin-right:10px;vertical-align:middle}
+.sec .fonte{text-align:center}
+
+/* quem conduz: título primeiro, depois foto e texto */
+.who-head{margin-bottom:40px}
+.who-head .eyebrow{margin-bottom:18px}
+.who-head .sig{font-family:var(--serif);font-style:italic;font-weight:500;font-size:clamp(30px,4.6vw,54px);line-height:1.12;max-width:20em}
+.who{align-items:start}
 </style>
 </head>
 <body>
@@ -229,7 +288,11 @@ footer .email{color:var(--creme);font-weight:600}
         <p class="eyebrow" data-r><b>XAMAS</b> Para filhos e filhas que não tiveram um pai</p>
         <h1 data-r style="--d:.08s"><span>Seu pai foi embora.</span><span>Ou ficou, mas <em>nunca esteve.</em></span></h1>
         <p class="sub" data-r style="--d:.16s">Está na hora de essa falta parar de mandar na sua vida: no dinheiro, no amor e na família.
-          <strong>A culpa não foi sua. Mas parar é decisão sua.</strong></p>
+          <strong>A falta do seu pai não foi culpa sua. Mas acabar com ela é decisão sua.</strong></p>
+    <div class="cta" data-r>
+      <a class="btn" href="#inscricao">Quero garantir a minha vaga</a>
+      <small>19/12 · Brasília · 12x R$ 10,03 ou R$ 97,00 à vista</small>
+    </div>
       </div>
       <div class="panel" data-r style="--d:.24s">
         <small>XAMAS · Imersão</small>
@@ -261,8 +324,12 @@ footer .email{color:var(--creme);font-weight:600}
         <p class="numero">+160 mil</p>
         <p style="font-family:var(--serif);font-size:clamp(22px,2.4vw,30px);line-height:1.25;margin-top:10px">bebês brasileiros nascem todo ano sem o nome do pai na certidão.</p>
         <p style="margin-top:20px;color:var(--pedra)">E esse número só conta o abandono no papel. O pai que morava na mesma casa e nunca esteve de verdade não aparece em estatística nenhuma.</p>
-        <p class="fonte" style="margin-top:14px">Fonte: Arpen-SP, com dados dos cartórios (2016 a 2024). <span class="pend">conferir faixa de números antes de publicar</span></p>
+        <p class="fonte" style="margin-top:14px">Fonte: Arpen-SP, com dados dos cartórios (2016 a 2024).</p>
       </div>
+    </div>
+      <div class="cta" data-r>
+      <a class="btn" href="#inscricao">Quero dar o primeiro passo</a>
+      <small>19/12 · Brasília · 12x R$ 10,03 ou R$ 97,00 à vista</small>
     </div>
   </div>
 </section>
@@ -301,53 +368,71 @@ footer .email{color:var(--creme);font-weight:600}
     <p class="eyebrow" data-r><b>03</b> A virada</p>
     <h2 data-r>É pesado, né? <em>A culpa não foi sua.</em></h2>
     <p class="linha" data-r>Talvez você já tenha tentado ignorar. Provar que não liga. Trabalhar mais. Amar mais. Ser o melhor pai ou a melhor mãe que você consegue. Mas a falta continua.</p>
-    <p class="linha" data-r>Você era criança. Você não escolheu essa falta. Mas as consequências ficaram com você. E por isso <strong>só você pode decidir parar.</strong></p>
+    <p class="linha" data-r>Você era criança. Você não escolheu essa falta. Mas as consequências ficaram com você. E por isso <strong>só você pode decidir acabar com ela.</strong></p>
     <p class="close-note" data-r>Tem que acabar em você. E o primeiro passo não precisa ser dado sozinho(a). <strong>E se esse fosse o dia do seu primeiro passo?</strong></p>
   </div>
 </section>
 
-<!-- BLOCO 5: passo a passo -->
+<!-- BLOCO 5: o que o XAMAS abre para você (une os antigos blocos 5, 6 e 8) -->
 <section class="sec bg-areia">
   <div class="wrap">
     <div data-r>
-      <p class="eyebrow"><b>04</b> O dia</p>
-      <h2>7 passos, do silêncio até o <em>primeiro passo novo.</em></h2>
+      <p class="eyebrow"><b>04</b> O que você leva</p>
+      <h2>O que o XAMAS: <em>Acaba em Mim</em> abre para você</h2>
+      <p class="lede">Um dia sério, com base, para a falta do seu pai parar de mandar em você.</p>
     </div>
-    <div class="steps" data-r style="--d:.08s">
-      <div class="step"><span class="rn">1</span><h3>Nomear</h3><p>Dar nome ao que você sente e ao tipo de falta que foi a sua: pai que foi embora, pai que ficou sem estar, pai que morreu.</p></div>
-      <div class="step"><span class="rn">2</span><h3>Entender</h3><p>Ver por que ainda dói, mesmo depois de tantos anos, sem culpa.</p></div>
-      <div class="step"><span class="rn">3</span><h3>Mapear</h3><p>Descobrir onde a falta aparece hoje: dinheiro, amor, família, trabalho, fé.</p></div>
-      <div class="step"><span class="rn">4</span><h3>Sentir</h3><p>Chorar o pai que você não teve do jeito que precisou.<span class="conf">confirmar programa: carta ao pai</span></p></div>
-      <div class="step"><span class="rn">5</span><h3>Perdoar</h3><p>Perdão com método, no seu tempo. Perdoar não é voltar a conviver, nem dizer que doeu pouco.</p></div>
-      <div class="step"><span class="rn">6</span><h3>Receber o Pai</h3><p>Ouvir o que a Palavra de Deus diz sobre o Pai que não falha, a partir de Lucas 15.<span class="conf">confirmar programa</span></p></div>
-      <div class="step"><span class="rn">7</span><h3>Acabar em você</h3><p>Sair com um compromisso concreto para os próximos 30 dias e uma palavra para os seus filhos (ou para a criança que você foi).</p></div>
-      <div class="step fim"><span class="rn">Acaba em mim.</span><p>Cada passo tem música, tempo e gente cuidando de você. Ninguém é obrigado a falar em público. Um dia não faz tudo, mas o primeiro passo cabe em um dia.</p></div>
-    </div>
-  </div>
-</section>
-
-<!-- BLOCO 6: o que você vai viver e receber -->
-<section class="sec">
-  <div class="wrap">
-    <div class="split">
-      <div data-r>
-        <p class="eyebrow"><b>05</b> O que está incluído</p>
-        <h2>Tudo o que você vai viver e receber no XAMAS: <em>Acaba em Mim</em></h2>
-        <p class="lede">Para a falta parar de mandar em você.</p>
+    <div class="pilares" data-r>
+      <div class="pilar">
+        <h3><small>Base 1</small>Bíblico</h3>
+        <div>
+          <p><strong>A presença de Deus e a paternidade dEle transformam a vida de quem cresceu sem pai.</strong> É o que a Palavra afirma, e é o que o Raffa viveu.</p>
+          <p>A Bíblia chama Deus de Pai dos órfãos (Salmo 68:5), mostra o Pai que corre ao encontro do filho que volta para casa (Lucas 15) e dá ao filho o lugar de filho (Romanos 8:15). E fala de corações de pais e filhos que se voltam um para o outro (Malaquias 4:6).</p>
+          <p>A pesquisa conversa com isso: um estudo de 2013 com 119 cristãos (Bucknell) mostrou que pessoas com pouca segurança com os pais ainda relataram um vínculo seguro e íntimo com Deus, o que sugere um papel reparador da fé.</p>
+        </div>
       </div>
-      <ul class="ticks" data-r style="--d:.08s">
-        <li><span>Um dia inteiro, das 09h às 20h, em Brasília <span class="pend">local a definir</span></span></li>
-        <li><span>O testemunho do Raffa: a história dele com o pai que foi embora</span></li>
-        <li><span>O mapa da falta: um exercício escrito, só seu, para ver onde ela aparece na sua vida</span></li>
-        <li><span>A carta ao seu pai, que não será enviada<span class="conf">confirmar programa</span></span></li>
-        <li><span>Perdão com método, passo a passo, sem pressa e sem obrigação</span></li>
-        <li><span>Um momento de bênção: ouvir o que você precisou ouvir<span class="conf">confirmar programa</span></span></li>
-        <li><span>O compromisso de 30 dias e a palavra para os seus filhos (ou para a criança que você foi)</span></li>
-        <li><span>Equipe de cuidado e sala de acolhimento abertas o dia todo</span></li>
-        <li><span>Kit do evento: caderno, caneta e cartões<span class="conf">confirmar programa</span></span></li>
-        <li><span>Grupo de continuidade por 30 dias e lista de profissionais de saúde mental<span class="conf">confirmar programa</span></span></li>
-        <li><span>Alimentação: <span class="pend">definir se almoço e lanche estão incluídos</span></span></li>
-      </ul>
+      <div class="pilar">
+        <h3><small>Base 2</small>Científico</h3>
+        <div>
+          <p><strong>A ciência já mediu o peso dessa falta.</strong> A evidência mais forte é sobre a saúde mental, e ela acompanha o adulto.</p>
+          <div class="stats">
+            <div class="stat"><b>47</b><span>estudos revisados por McLanahan, Tach e Schneider, com métodos que isolam causa e efeito: a ausência do pai causa dano, principalmente na saúde mental, e o dano persiste na vida adulta.</span></div>
+            <div class="stat"><b>+17 mil</b><span>adultos acompanhados pelo estudo ACE (CDC e Kaiser Permanente). A separação dos pais e a perda de um deles estão entre as adversidades medidas. Quanto mais adversidades na infância, maior o risco de doença mental, dependência e doenças físicas na vida adulta.</span></div>
+            <div class="stat"><b>até 7x</b><span>mais chance de alcoolismo para quem passou por 4 ou mais experiências adversas na infância, segundo o mesmo estudo.</span></div>
+          </div>
+          <p>Quem cresceu com a falta do pai não está exagerando, nem é fraco. Está carregando algo que a pesquisa mede e confirma.</p>
+        </div>
+      </div>
+      <div class="pilar">
+        <h3><small>Base 3</small>Psicológico</h3>
+        <div>
+          <p>Princípios de psicologia e inteligência emocional. Como funcionam o apego, o luto e o perdão, e por que o adulto de 40 anos ainda reage como o menino de 8.</p>
+        </div>
+      </div>
+    </div>
+    <p class="chamada" data-r>O que você vem buscar, e o que esse dia abre para você:</p>
+    <div class="res" data-r>
+      <div><span class="n">1</span><h4>Clareza</h4><p>Você vai entender de onde vem o que sente e por que ainda dói, depois de tantos anos.</p></div>
+      <div><span class="n">2</span><h4>Alívio</h4><p>Você vai começar a soltar o peso de carregar a falta do seu pai sozinho(a).</p></div>
+      <div><span class="n">3</span><h4>Liberdade nas suas relações</h4><p>Você vai ver onde a falta ainda decide por você, no dinheiro, no amor e na família, e começar a retomar o comando.</p></div>
+      <div><span class="n">4</span><h4>Perdão que liberta</h4><p>Você vai conhecer um perdão com método, que não exige que você volte a conviver nem que finja que não doeu.</p></div>
+      <div><span class="n">5</span><h4>Identidade de filho(a)</h4><p>Você vai descobrir o que a Palavra de Deus diz sobre o Pai que não falha, e quem você é para Ele.</p></div>
+      <div><span class="n">6</span><h4>Uma decisão</h4><p>Você vai sair com um compromisso concreto e uma palavra para os seus filhos (ou para a criança que você foi). Para o ciclo acabar em você.</p></div>
+    </div>
+    <div class="fecho-dia" data-r>
+      <p>Um dia não faz tudo. Mas o primeiro passo cabe em um dia.</p>
+      <p class="decisao">A decisão de essa ferida acabar em você vai mudar tudo.</p>
+      <p>O resto do caminho continua depois.</p>
+    </div>
+    <ul class="junto" data-r>
+      <li>Das 09h às 20h, em Brasília</li>
+      <li>Equipe de cuidado e sala de acolhimento abertas o dia todo</li>
+      <li>Kit do evento</li>
+      <li>Grupo de continuidade por 30 dias e lista de profissionais de saúde mental</li>
+    </ul>
+    <p class="fonte" style="margin-top:14px">Ninguém é obrigado a falar em público.</p>
+    <div class="cta c" data-r>
+      <a class="btn" href="#inscricao">Sim, quero acabar com essa falta</a>
+      <small>19/12 · Brasília · 12x R$ 10,03 ou R$ 97,00 à vista</small>
     </div>
   </div>
 </section>
@@ -357,7 +442,7 @@ footer .email{color:var(--creme);font-weight:600}
   <div class="wrap">
     <div class="split">
       <div data-r>
-        <p class="eyebrow"><b>06</b> Para quem é</p>
+        <p class="eyebrow"><b>05</b> Para quem é</p>
         <h2>O XAMAS: Acaba em Mim é para <em>você que:</em></h2>
         <p class="lede"><strong>Se você se reconheceu em pelo menos 2 itens, esse dia é para você.</strong></p>
         <div class="aviso">
@@ -379,52 +464,34 @@ footer .email{color:var(--creme);font-weight:600}
   </div>
 </section>
 
-<!-- BLOCO 8: base do dia -->
-<section class="sec">
-  <div class="wrap">
-    <div data-r>
-      <p class="eyebrow"><b>07</b> A base</p>
-      <h2>Um dia com base: <em>emoção, ciência e Palavra de Deus.</em></h2>
-    </div>
-    <div class="cards c2" data-r style="--d:.08s">
-      <div class="card"><span class="n">Emoção</span><p>Dar nome ao que se sente é o primeiro passo para ter menos medo disso. <span class="pend">verificar fonte</span></p></div>
-      <div class="card"><span class="n">Ciência</span><p>Uma revisão de 47 estudos (McLanahan, Tach e Schneider) mostra que a ausência do pai afeta a saúde mental, e que o efeito pode chegar à vida adulta.</p></div>
-      <div class="card"><span class="n">Perdão</span><p>Pesquisas sobre perdão mostram que ele pode ser trabalhado com método, inclusive em grupo.</p></div>
-      <div class="card"><span class="n">Palavra</span><p>Lucas 15, Romanos 8:15 e Malaquias 4:6 sustentam os passos do dia.</p></div>
-    </div>
-    <p class="fonte" style="margin-top:16px"><span class="pend">citar fontes aqui antes de publicar</span></p>
-  </div>
-</section>
-
 <!-- BLOCO 9: investimento -->
 <section class="sec bg-areia" id="inscricao">
   <div class="wrap">
     <div data-r>
-      <p class="eyebrow"><b>08</b> Inscrição</p>
+      <p class="eyebrow"><b>06</b> Inscrição</p>
       <h2>Garanta o seu lugar no XAMAS: <em>Acaba em Mim</em></h2>
-      <div class="dados"><span>19/12</span><span>09h às 20h</span><span>Brasília</span><span class="pend">local a definir</span><span class="pend">vagas: número real</span></div>
+      <div class="dados"><span>19/12</span><span>09h às 20h</span><span>Brasília</span></div>
     </div>
     <div class="precos" data-r style="--d:.08s">
       <div class="preco">
         <p class="tag">Para você</p>
         <h3>1 convite</h3>
-        <p class="valor"><small>R$</small>97</p>
-        <p class="cada"><span class="pend">parcelamento a definir</span> ou à vista no Pix</p>
-        <!-- TROCAR href pelo link do checkout (1 convite, R$ 97) -->
-        <a class="btn" href="#" data-checkout="1-convite">Sim, acaba em mim. Quero a minha vaga</a>
+        <p class="parcela">12x <b>R$ 10,03</b></p>
+        <p class="avista">ou <b>R$ 97,00</b> à vista</p>
+        <a class="btn" href="https://pay.kiwify.com.br/qTC7P1J" rel="noopener" data-checkout="1-convite">Sim, acaba em mim. Quero a minha vaga</a>
       </div>
       <div class="preco dest">
         <p class="tag">Venha acompanhado(a)</p>
         <h3>3 convites</h3>
-        <p class="valor"><small>R$</small>197</p>
+        <p class="parcela">12x <b>R$ 20,37</b></p>
+        <p class="avista">ou <b>R$ 197,00</b> à vista</p>
         <p class="cada">R$ 65,67 por pessoa. Você economiza R$ 94.</p>
-        <!-- TROCAR href pelo link do checkout (3 convites, R$ 197) -->
-        <a class="btn" href="#" data-checkout="3-convites">Sim, acaba em mim. Quero 3 convites</a>
+        <a class="btn" href="https://pay.kiwify.com.br/x1EOif8" rel="noopener" data-checkout="3-convites">Sim, acaba em mim. Quero 3 convites</a>
       </div>
     </div>
     <div class="regras" data-r>
       <p>Cada pessoa convidada passa por uma triagem rápida e assina o termo de ciência. O evento é espiritual e educativo e não substitui terapia.</p>
-      <p>Pix e cartão de crédito.</p>
+      <p>Pix e cartão de crédito, em até 12 vezes. Almoço e lanche não estão incluídos.</p>
     </div>
   </div>
 </section>
@@ -433,7 +500,7 @@ footer .email{color:var(--creme);font-weight:600}
 <section class="sec bg-dark sincero">
   <div class="wrap">
     <div data-r>
-      <p class="eyebrow"><b>09</b> Conversa sincera</p>
+      <p class="eyebrow"><b>07</b> Conversa sincera</p>
       <h2>Vou ser sincero com você. <em>O XAMAS não cura ninguém em um dia.</em></h2>
       <p class="lede">Ninguém cura. O caminho continua depois, com o grupo de 30 dias e com ajuda profissional, se for preciso.</p>
     </div>
@@ -451,35 +518,41 @@ footer .email{color:var(--creme);font-weight:600}
         <h3>O que um dia faz</h3>
         <p class="t">O primeiro passo.</p>
         <ul>
-          <li>Nomear a falta.</li>
-          <li>Entender por que dói.</li>
-          <li>Sentir e perdoar com método.</li>
-          <li>Dar o primeiro passo.</li>
+          <li>Clareza sobre o que você sente.</li>
+          <li>Perdão com método.</li>
+          <li>O seu lugar de filho(a).</li>
+          <li>O primeiro passo.</li>
         </ul>
       </div>
     </div>
-    <p class="nota" data-r>Perdoar não é voltar a conviver. Se ele te feriu de verdade, você pode perdoar e manter distância. Mas uma coisa eu sei: a falta do seu pai não vai acabar sozinha. Alguém precisa parar.</p>
+    <p class="nota" data-r>Perdoar não é voltar a conviver. Se ele te feriu de verdade, você pode perdoar e manter distância. Mas uma coisa eu sei: a falta do seu pai não vai acabar sozinha. Alguém precisa decidir acabar com ela.</p>
     <p class="grande" data-r>Tem que acabar em você.</p>
+      <div class="cta" data-r>
+      <a class="btn" href="#inscricao">Sim, acaba em mim. Quero a minha vaga</a>
+      <small>19/12 · Brasília · 12x R$ 10,03 ou R$ 97,00 à vista</small>
+    </div>
   </div>
 </section>
 
 <!-- BLOCO 11: autoridade -->
 <section class="sec">
   <div class="wrap">
+    <div class="who-head" data-r>
+      <p class="eyebrow"><b>08</b> Quem conduz o dia</p>
+      <h2 class="sig">Eu sou o Raffa Nunes. Eu cresci sem pai.</h2>
+    </div>
     <div class="who">
       <div class="ph" data-r>
-        <div class="foto"><span>Foto do Raffa em contexto<br>(com as filhas, se ele autorizar, ou no palco)</span></div>
+        <img class="retrato" src="assets/raffa-retrato.webp" alt="Raffa Nunes" width="880" height="1100" loading="lazy">
       </div>
       <div data-r style="--d:.1s">
-        <p class="eyebrow"><b>10</b> Quem conduz o dia</p>
-        <p class="sig">Eu sou o Raffa Nunes. Eu cresci sem pai.</p>
         <p>Minha mãe me teve aos 17 anos, e meu pai foi embora. Fui criado com muito amor pela minha avó, pela minha mãe, pela minha tia e pelos meus tios. Mesmo assim, a falta de um pai ficou.</p>
         <p>Ela me acompanhou por muitos anos: no medo de não ser suficiente, na necessidade de provar o meu valor, nos meus relacionamentos.</p>
         <p>Fui pastor de jovens e servi 9 anos como pastor e líder numa igreja. Passei por 7 meses de terapia, oração, consagração e jejum para cuidar do meu coração.</p>
         <p>Hoje sou pai de três filhas. Decidi que o que me faltou não ia faltar para elas.</p>
         <p>Eu não sou terapeuta. Sou um filho que atravessou isso e que recebeu de Deus o chamado de ajudar outros a atravessar.</p>
-        <p class="ultima">Não vim ensinar ninguém a ser pai. Vim dizer que <em>acaba em mim</em>, e que pode acabar em você.</p>
-        <p class="fonte" style="margin-top:14px"><span class="pend">rascunho: o Raffa revisa cada frase antes de publicar</span></p>
+        <p class="ultima"><strong>Não vim ensinar ninguém a ser pai.</strong> Vim dizer que essa ferida, essa falta, acabou em mim: deixou de roubar a minha ousadia, a minha coragem, a minha família, os meus negócios e o projeto de Deus para a minha vida. Eu tomei uma decisão, e Deus curou essa ferida em mim.</p>
+        <p class="ultima">E assim como essa falta acabou em mim, eu estou aqui para te ajudar a também <em>ACABAR EM VOCÊ</em>. Chega dessa ferida roubar os presentes e as promessas de Deus para a sua vida.</p>
       </div>
     </div>
   </div>
@@ -497,15 +570,17 @@ footer .email{color:var(--creme);font-weight:600}
     <div class="precos" data-r style="--d:.08s">
       <div class="preco">
         <h3>1 convite</h3>
-        <p class="valor"><small>R$</small>97</p>
-        <a class="btn" href="#" data-checkout="1-convite" style="margin-top:22px">Sim, acaba em mim. Quero a minha vaga</a>
+        <p class="parcela">12x <b>R$ 10,03</b></p>
+        <p class="avista">ou <b>R$ 97,00</b> à vista</p>
+        <a class="btn" href="https://pay.kiwify.com.br/qTC7P1J" rel="noopener" data-checkout="1-convite" style="margin-top:22px">Sim, acaba em mim. Quero a minha vaga</a>
       </div>
       <div class="preco dest">
         <p class="tag">Venha acompanhado(a)</p>
         <h3>3 convites</h3>
-        <p class="valor"><small>R$</small>197</p>
+        <p class="parcela">12x <b>R$ 20,37</b></p>
+        <p class="avista">ou <b>R$ 197,00</b> à vista</p>
         <p class="cada" style="margin-bottom:0">R$ 65,67 por pessoa</p>
-        <a class="btn" href="#" data-checkout="3-convites" style="margin-top:22px">Sim, acaba em mim. Quero 3 convites</a>
+        <a class="btn" href="https://pay.kiwify.com.br/x1EOif8" rel="noopener" data-checkout="3-convites" style="margin-top:22px">Sim, acaba em mim. Quero 3 convites</a>
       </div>
     </div>
     <div class="regras" data-r>
@@ -518,22 +593,25 @@ footer .email{color:var(--creme);font-weight:600}
 <section class="sec">
   <div class="wrap">
     <div data-r>
-      <p class="eyebrow"><b>11</b> Antes de se inscrever</p>
+      <p class="eyebrow"><b>09</b> Antes de se inscrever</p>
       <h2>Perguntas <em>frequentes.</em></h2>
     </div>
     <div class="faq" data-r style="--d:.08s">
       <details><summary>Funciona para mim, se meu pai ficou em casa?</summary><p>Sim. Muita gente teve um pai presente no endereço e ausente no coração. Essa falta também é falta, e o dia é para você.</p></details>
       <details><summary>E se meu pai morreu?</summary><p>O dia também é para você. Quem perdeu o pai carrega saudade e coisas que ficaram sem ser ditas, e isso tem lugar aqui.</p></details>
-      <details><summary>É terapia?</summary><p>Não. O evento é espiritual e educativo e não substitui acompanhamento psicológico ou psiquiátrico. Existe equipe de cuidado e uma sala de acolhimento aberta o dia todo. No fim, você recebe uma lista de profissionais.<span class="conf">confirmar programa</span></p></details>
+      <details><summary>É terapia?</summary><p>Não. O evento é espiritual e educativo e não substitui acompanhamento psicológico ou psiquiátrico. Existe equipe de cuidado e uma sala de acolhimento aberta o dia todo. No fim, você recebe uma lista de profissionais.</p></details>
       <details><summary>Vou ter que falar em público ou contar a minha história?</summary><p>Não. Ninguém é obrigado a falar. Os exercícios escritos são só seus.</p></details>
       <details><summary>E se eu passar mal ou ficar muito abalado(a)?</summary><p>Você pode sair a qualquer momento e ir para a sala de acolhimento. A equipe de cuidado fica o dia todo, e cuida de você até o fim.</p></details>
       <details><summary>O meu pai me machucou de verdade. Vão me pedir para perdoar ou procurar ele?</summary><p>Não. Perdoar não é reconciliar, não é confiar de novo e não é voltar a conviver. Ninguém vai te levar a procurar quem te feriu. Na inscrição, você pode contar que sofreu isso, e a equipe conversa com você antes.</p></details>
-      <details><summary>É só para cristãos?</summary><p>O dia é cristão: a Palavra de Deus está em todos os momentos. Quem ainda não crê é recebido com respeito.<span class="conf">confirmar posição do Raffa</span></p></details>
-      <details><summary>Como funcionam os 3 convites?</summary><p>Por R$ 197 você garante 3 lugares, para quem você quiser levar: irmão, irmã, amigo, cônjuge. Cada pessoa faz a sua triagem rápida e assina o seu termo de ciência. <span class="pend">confirmar: convites nominais</span></p></details>
-      <details><summary>Qual a forma de pagamento? É seguro?</summary><p>Pix e cartão de crédito, em plataforma certificada. <span class="pend">definir parcelamento</span></p></details>
-      <details><summary>Tem garantia?</summary><p><span class="pend">definir política de reembolso e prazo</span></p></details>
-      <details><summary>Como recebo as informações do evento?</summary><p>Depois da inscrição e da triagem, você recebe por e-mail <span class="pend">confirmar canais</span> o local, o que levar e os horários.</p></details>
+      <details><summary>É só para cristãos?</summary><p>Não. Todos são bem-vindos. A ferida da falta de um pai não tem religião, e não é preciso ter religião para participar: o dia é para qualquer pessoa que queira vencer essa ferida. A Palavra de Deus é a fonte que usamos para trabalhá-la, junto com princípios bíblicos, científicos e psicológicos.</p></details>
+      <details><summary>Como funcionam os 3 convites?</summary><p>Por R$ 197 você garante 3 lugares, para quem você quiser levar: irmão, irmã, amigo, cônjuge. Cada pessoa faz a sua triagem rápida e assina o seu termo de ciência.</p></details>
+      <details><summary>Qual a forma de pagamento? É seguro?</summary><p>Pix e cartão de crédito, em até 12 vezes, em plataforma certificada.</p></details>
+            <details><summary>Como recebo as informações do evento?</summary><p>Depois da inscrição e da triagem, você recebe por e-mail o local exato, o que levar e os horários.</p></details>
       <details><summary>E se eu estiver em crise agora?</summary><p>Ligue para o <strong>CVV, 188</strong> (24 horas, gratuito). Em emergência, <strong>SAMU, 192</strong>. Você não precisa esperar o dia 19.</p></details>
+    </div>
+      <div class="cta" data-r>
+      <a class="btn" href="#inscricao">Quero garantir a minha vaga</a>
+      <small>19/12 · Brasília · 12x R$ 10,03 ou R$ 97,00 à vista</small>
     </div>
   </div>
 </section>
@@ -544,7 +622,6 @@ footer .email{color:var(--creme);font-weight:600}
   <div class="wrap">
     <img src="assets/logo-xamas-claro.png" alt="Imersão XAMAS" width="162" height="42">
     <p>XAMAS - ACABA EM MIM<br>Todos os direitos reservados ©</p>
-    <p>Dúvidas: <span class="email pend">e-mail profissional em texto simples, sem link</span><br><span class="pend">Cidade/UF</span> | CNPJ: <span class="pend">a definir</span></p>
     <p>Este evento é espiritual e educativo e não substitui acompanhamento psicológico ou psiquiátrico. A participação não garante resultado específico: o caminho de cada pessoa é dela e de Deus.</p>
     <p>Em momento de crise emocional, ligue para o CVV (188) ou para o SAMU (192).</p>
     <p>Este site não é afiliado ao Facebook ou a qualquer entidade do Facebook. Depois que você sair do Facebook, a responsabilidade não é deles e sim do nosso site.</p>
@@ -553,8 +630,6 @@ footer .email{color:var(--creme);font-weight:600}
 
 <script>
 (function(){
-  // Modo revisão: abrir a página com ?revisao mostra os avisos "confirmar programa"
-  try{ if(location.search.indexOf('revisao')>-1) document.body.classList.add('revisao'); }catch(e){}
   // Cabeçalho translúcido ao rolar
   var h=document.querySelector('header');
   function onScroll(){ h.classList.toggle('solid', window.scrollY>30); }
