@@ -267,6 +267,17 @@ footer .email{color:var(--creme);font-weight:600}
 .who-head .eyebrow{margin-bottom:18px}
 .who-head .sig{font-family:var(--serif);font-style:italic;font-weight:500;font-size:clamp(30px,4.6vw,54px);line-height:1.12;max-width:20em}
 .who{align-items:start}
+
+/* banners de imagem nas seções */
+.banner{margin:48px 0 0;background:var(--carvao);border-bottom:4px solid var(--chama);overflow:hidden}
+.banner img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;object-position:50% 58%;display:block}
+@media(min-width:720px){.banner img{aspect-ratio:16/9}}
+.virada .banner{margin-bottom:8px}
+/* painel do topo com imagem */
+.panel{background-color:var(--carvao);background-image:linear-gradient(180deg,rgba(31,26,23,.78) 0%,rgba(31,26,23,.15) 42%,rgba(31,26,23,0) 70%,rgba(31,26,23,.7) 100%),url(assets/painel-topo.webp);background-size:cover;background-position:center bottom}
+.panel .topo small{display:block;margin-bottom:16px}
+.panel .data{font-size:12px;letter-spacing:.2em;text-transform:uppercase;font-weight:700;color:var(--creme)}
+@media(max-width:899px){.panel{aspect-ratio:4/5;min-height:0;max-width:420px;justify-self:center}}
 </style>
 </head>
 <body>
@@ -295,8 +306,11 @@ footer .email{color:var(--creme);font-weight:600}
     </div>
       </div>
       <div class="panel" data-r style="--d:.24s">
-        <small>XAMAS · Imersão</small>
-        <div class="acaba">Acaba em mim.<span>19/12 · Brasília · 09h às 20h</span></div>
+        <div class="topo">
+          <small>XAMAS · Imersão</small>
+          <div class="acaba">Acaba em mim.</div>
+        </div>
+        <span class="data">19/12 · Brasília · 09h às 20h</span>
       </div>
     </div>
     <div class="proof" data-r style="--d:.3s"><span>Um dia seguro</span><span>Ninguém é obrigado a falar</span><span>Equipe de cuidado o dia todo</span></div>
@@ -342,6 +356,9 @@ footer .email{color:var(--creme);font-weight:600}
       <h2>Você carrega a falta do seu pai e <em>quase ninguém percebe.</em></h2>
       <p class="lede">Talvez você viva pensando assim:</p>
     </div>
+    <figure class="banner" data-r>
+      <img src="assets/banner-falta-768.webp" srcset="assets/banner-falta-768.webp 768w, assets/banner-falta.webp 1536w" sizes="(min-width:1160px) 1112px, calc(100vw - 48px)" alt="Um filho e uma filha adultos sentados no chão, acorrentados e de cabeça baixa, diante de uma cadeira vazia" width="1536" height="1024" loading="lazy">
+    </figure>
     <ol class="list" data-r style="--d:.08s">
       <li>Ele estava em casa, mas nunca estava comigo.</li>
       <li>Nunca ouvi um "eu te amo" dele.</li>
@@ -367,6 +384,9 @@ footer .email{color:var(--creme);font-weight:600}
   <div class="wrap">
     <p class="eyebrow" data-r><b>03</b> A virada</p>
     <h2 data-r>É pesado, né? <em>A culpa não foi sua.</em></h2>
+    <figure class="banner" data-r>
+      <img src="assets/banner-virada-768.webp" srcset="assets/banner-virada-768.webp 768w, assets/banner-virada.webp 1536w" sizes="(min-width:1160px) 1112px, calc(100vw - 48px)" alt="O filho e a filha de pé, erguendo o rosto, com um elo da corrente se partindo em faíscas e uma porta se abrindo com luz quente" width="1536" height="1024" loading="lazy">
+    </figure>
     <p class="linha" data-r>Talvez você já tenha tentado ignorar. Provar que não liga. Trabalhar mais. Amar mais. Ser o melhor pai ou a melhor mãe que você consegue. Mas a falta continua.</p>
     <p class="linha" data-r>Você era criança. Você não escolheu essa falta. Mas as consequências ficaram com você. E por isso <strong>só você pode decidir acabar com ela.</strong></p>
     <p class="close-note" data-r>Tem que acabar em você. E o primeiro passo não precisa ser dado sozinho(a). <strong>E se esse fosse o dia do seu primeiro passo?</strong></p>
@@ -381,6 +401,9 @@ footer .email{color:var(--creme);font-weight:600}
       <h2>O que o XAMAS: <em>Acaba em Mim</em> abre para você</h2>
       <p class="lede">Um dia sério, com base, para a falta do seu pai parar de mandar em você.</p>
     </div>
+    <figure class="banner" data-r>
+      <img src="assets/banner-leva-768.webp" srcset="assets/banner-leva-768.webp 768w, assets/banner-leva.webp 1536w" sizes="(min-width:1160px) 1112px, calc(100vw - 48px)" alt="O filho e a filha caminhando juntos em direção a um amanhecer laranja, com as correntes quebradas no chão atrás deles" width="1536" height="1024" loading="lazy">
+    </figure>
     <div class="pilares" data-r>
       <div class="pilar">
         <h3><small>Base 1</small>Bíblico</h3>
